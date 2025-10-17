@@ -75,7 +75,7 @@ export default function Contact() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="text-xl text-gray-400 max-w-2xl mx-auto"
             >
-              Have a project in mind or want to collaborate? I'd love to hear from you.
+              Have a project in mind or want to collaborate? I&apos;d love to hear from you.
             </motion.p>
           </div>
 
