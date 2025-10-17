@@ -62,8 +62,8 @@ export default function About() {
               className="space-y-6"
             >
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm a Software Development Engineer with 3+ years at Goldman Sachs, where I gained end-to-end
-                exposure to full-stack engineering. I've built secure, scalable microservices handling 500+
+                I&apos;m a Software Development Engineer with 3+ years at Goldman Sachs, where I gained end-to-end
+                exposure to full-stack engineering. I&apos;ve built secure, scalable microservices handling 500+
                 concurrent operations, React frontends that reduced onboarding time by 75%, and Kafka-based
                 pipelines processing millions of records.
               </p>

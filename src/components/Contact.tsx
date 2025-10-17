@@ -88,11 +88,11 @@ export default function Contact() {
               className="space-y-8"
             >
               <div>
-                <h3 className="text-3xl font-bold mb-6 text-nvidia-green">Let's Connect</h3>
+                <h3 className="text-3xl font-bold mb-6 text-nvidia-green">Let&apos;s Connect</h3>
                 <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                  I'm currently pursuing my Master's in Computer Science at Stony Brook University and am
+                  I&apos;m currently pursuing my Master&apos;s in Computer Science at Stony Brook University and am
                   open to Software Engineering opportunities, AI/ML projects, and research collaborations.
-                  Let's discuss how we can work together!
+                  Let&apos;s discuss how we can work together!
                 </p>
               </div>
 
