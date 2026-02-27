@@ -29,23 +29,39 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-2xl md:text-3xl text-gray-300 mb-4 font-light"
           >
-            Full Stack Software Engineer | AI/ML & AR/VR Enthusiast
+            Full Stack Software Engineer | AI/ML Engineer
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            className="flex flex-wrap justify-center gap-3 mb-6"
+          >
+            <span className="px-4 py-2 bg-nvidia-green/15 border border-nvidia-green/40 text-nvidia-green font-semibold rounded-full text-sm md:text-base">
+              Goldman Sachs &middot; 3+ Years
+            </span>
+            <span className="px-4 py-2 bg-nvidia-green/15 border border-nvidia-green/40 text-nvidia-green font-semibold rounded-full text-sm md:text-base">
+              IIT Kharagpur Alumna
+            </span>
+            <span className="px-4 py-2 bg-nvidia-green/15 border border-nvidia-green/40 text-nvidia-green font-semibold rounded-full text-sm md:text-base">
+              MS CS @ Stony Brook
+            </span>
+          </motion.div>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
             className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            MS CS student at <span className="text-nvidia-green font-semibold">Stony Brook University</span> with 3+ years at <span className="text-nvidia-green font-semibold">Goldman Sachs</span> building scalable microservices and React frontends.
-            <span className="text-nvidia-green font-semibold"> IIT Kharagpur</span> alumna passionate about AI/ML, AR/VR, and high-performance distributed systems.
+            Built scalable microservices and React frontends at Goldman Sachs. Passionate about AI/ML and high-performance distributed systems.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
+            transition={{ delay: 1.0, duration: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <a

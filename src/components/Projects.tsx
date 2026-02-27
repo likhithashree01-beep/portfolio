@@ -6,33 +6,15 @@ import { useRef, useState } from 'react';
 
 const projects = [
   {
-    title: 'Disaster Tweet Classification',
-    description: 'Engineered deep learning models using LSTM and fine-tuned BERT to categorize 10,000+ tweets. Achieved 82% accuracy with comprehensive NLP preprocessing pipeline using NLTK and TF-IDF.',
-    image: '/api/placeholder/600/400',
-    tags: ['Python', 'BERT', 'LSTM', 'NLP', 'NLTK'],
-    github: '#',
-    demo: '#',
-  },
-  {
-    title: 'Hyperspectral Image Classification',
-    description: 'Created hybrid 2D CNN-SVM model achieving 91% accuracy across 16 classes on AVIRIS sensor data. Applied PCA for dimensionality reduction, accelerating model training by 3×.',
-    image: '/api/placeholder/600/400',
-    tags: ['Python', 'CNN', 'SVM', 'PCA', 'TensorFlow'],
-    github: '#',
-    demo: '#',
-  },
-  {
-    title: 'Plant Disease Detection System',
-    description: 'Leveraged transfer learning with AlexNet and VGG19 architectures achieving 94% accuracy across 15 plant disease categories. Enhanced dataset of 20,579 images using data augmentation techniques.',
-    image: '/api/placeholder/600/400',
-    tags: ['PyTorch', 'Transfer Learning', 'CNN', 'Computer Vision'],
+    title: 'Embodied AI & Multimodal Deep Learning',
+    description: 'Developing AI agents in Habitat simulation environments for autonomous 3D navigation using reinforcement learning. Integrating multimodal inputs (RGB, depth, audio) into deep neural policy architectures and evaluating actor-critic RL algorithms for goal-directed navigation.',
+    tags: ['Python', 'Reinforcement Learning', 'Computer Vision', 'Embodied AI', 'Habitat'],
     github: '#',
     demo: '#',
   },
   {
     title: 'Intraday Volatility & Risk Modeling',
     description: 'Developed a high-frequency quantitative finance risk forecasting framework using GARCH-based models with heavy-tailed distributions to improve VaR/CVaR tail-risk estimation. Conducted rigorous backtesting using exceedance analysis, QQ plots, and goodness-of-fit metrics.',
-    image: '/api/placeholder/600/400',
     tags: ['Python', 'GARCH', 'Time-Series', 'Quantitative Finance', 'Risk Modeling'],
     github: '#',
     demo: '#',
@@ -40,7 +22,6 @@ const projects = [
   {
     title: 'Hybrid RDMA Transport for Mako',
     description: 'Built a hybrid RDMA-TCP transport for Mako Paxos replication, integrating two-sided RDMA into the RRR RPC framework with epoll-based completion handling. Achieved 3.1x throughput and 3.4x lower latency vs TCP on Alibaba Cloud eRDMA instances.',
-    image: '/api/placeholder/600/400',
     tags: ['C++', 'RDMA', 'Distributed Systems', 'Paxos', 'Networking'],
     github: '#',
     demo: '#',
@@ -48,8 +29,28 @@ const projects = [
   {
     title: 'Raft-Based Replicated State Machine',
     description: 'Implemented a fault-tolerant Raft consensus protocol from scratch in C++, enabling leader election, log replication, and recovery across distributed nodes for a replicated key-value store. Ensured correctness under failures and network partitions.',
-    image: '/api/placeholder/600/400',
     tags: ['C++', 'Raft', 'Distributed Systems', 'RPC', 'Consensus'],
+    github: '#',
+    demo: '#',
+  },
+  {
+    title: 'Disaster Tweet Classification',
+    description: 'Engineered deep learning models using LSTM and fine-tuned BERT to categorize 10,000+ tweets. Achieved 82% accuracy with comprehensive NLP preprocessing pipeline using NLTK and TF-IDF.',
+    tags: ['Python', 'BERT', 'LSTM', 'NLP', 'NLTK'],
+    github: '#',
+    demo: '#',
+  },
+  {
+    title: 'Hyperspectral Image Classification',
+    description: 'Created hybrid 2D CNN-SVM model achieving 91% accuracy across 16 classes on AVIRIS sensor data. Applied PCA for dimensionality reduction, accelerating model training by 3×.',
+    tags: ['Python', 'CNN', 'SVM', 'PCA', 'TensorFlow'],
+    github: '#',
+    demo: '#',
+  },
+  {
+    title: 'Plant Disease Detection System',
+    description: 'Leveraged transfer learning with AlexNet and VGG19 architectures achieving 94% accuracy across 15 plant disease categories. Enhanced dataset of 20,579 images using data augmentation techniques.',
+    tags: ['PyTorch', 'Transfer Learning', 'CNN', 'Computer Vision'],
     github: '#',
     demo: '#',
   },
@@ -102,25 +103,6 @@ export default function Projects() {
                 onHoverEnd={() => setHoveredIndex(null)}
                 className="group relative bg-muted border border-border rounded-2xl overflow-hidden hover:border-nvidia-green transition-all duration-500"
               >
-                {/* Image Container */}
-                <div className="relative h-64 bg-gradient-to-br from-nvidia-green/20 to-black overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-nvidia-green/20 rounded-full blur-3xl" />
-                  </div>
-                  <motion.div
-                    animate={{
-                      scale: hoveredIndex === index ? 1.1 : 1,
-                      opacity: hoveredIndex === index ? 0.9 : 0.7,
-                    }}
-                    transition={{ duration: 0.4 }}
-                    className="absolute inset-0 flex items-center justify-center"
-                  >
-                    <div className="text-8xl font-bold text-nvidia-green/30">
-                      {index + 1}
-                    </div>
-                  </motion.div>
-                </div>
-
                 {/* Content */}
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-3 group-hover:text-nvidia-green transition-colors duration-300">
