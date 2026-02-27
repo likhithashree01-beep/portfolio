@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Likhitha Shree Bethi - Software Engineer | AI/ML Enthusiast",
+  title: "Likhitha Shree Bethi - Software Engineer | AI/ML Engineer",
   description: "Software Development Engineer with 3+ years at Goldman Sachs. MS CS student at Stony Brook University specializing in Full-Stack Development, AI/ML, and distributed systems. IIT Kharagpur alumna.",
   keywords: [
     "Software Engineer",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Likhitha Shree Bethi" }],
   openGraph: {
-    title: "Likhitha Shree Bethi - Software Engineer | AI/ML Enthusiast",
+    title: "Likhitha Shree Bethi - Software Engineer | AI/ML Engineer",
     description: "Software Development Engineer with 3+ years at Goldman Sachs. Passionate about building scalable microservices and AI/ML solutions.",
     type: "website",
   },
