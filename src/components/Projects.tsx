@@ -29,6 +29,30 @@ const projects = [
     github: '#',
     demo: '#',
   },
+  {
+    title: 'Intraday Volatility & Risk Modeling',
+    description: 'Developed a high-frequency quantitative finance risk forecasting framework using GARCH-based models with heavy-tailed distributions to improve VaR/CVaR tail-risk estimation. Conducted rigorous backtesting using exceedance analysis, QQ plots, and goodness-of-fit metrics.',
+    image: '/api/placeholder/600/400',
+    tags: ['Python', 'GARCH', 'Time-Series', 'Quantitative Finance', 'Risk Modeling'],
+    github: '#',
+    demo: '#',
+  },
+  {
+    title: 'Hybrid RDMA Transport for Mako',
+    description: 'Built a hybrid RDMA-TCP transport for Mako Paxos replication, integrating two-sided RDMA into the RRR RPC framework with epoll-based completion handling. Achieved 3.1x throughput and 3.4x lower latency vs TCP on Alibaba Cloud eRDMA instances.',
+    image: '/api/placeholder/600/400',
+    tags: ['C++', 'RDMA', 'Distributed Systems', 'Paxos', 'Networking'],
+    github: '#',
+    demo: '#',
+  },
+  {
+    title: 'Raft-Based Replicated State Machine',
+    description: 'Implemented a fault-tolerant Raft consensus protocol from scratch in C++, enabling leader election, log replication, and recovery across distributed nodes for a replicated key-value store. Ensured correctness under failures and network partitions.',
+    image: '/api/placeholder/600/400',
+    tags: ['C++', 'Raft', 'Distributed Systems', 'RPC', 'Consensus'],
+    github: '#',
+    demo: '#',
+  },
 ];
 
 export default function Projects() {
@@ -67,7 +91,7 @@ export default function Projects() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
